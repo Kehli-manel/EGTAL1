@@ -1,0 +1,150 @@
+.about_container{
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    padding: 30px 150px 100px 150px;
+}
+.about_img{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    
+}
+
+.about_img img{
+    position: relative;
+    width: 400px;
+    height: 500px;
+
+}
+.about_img .about_info{
+    position: absolute;
+    margin-right: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 330px;
+    height: 430px;
+    padding: 15px;
+    margin: 20px;
+    background-color: #ffffffee;
+    color: #B19777;
+}
+
+.about_img .about_info h2{
+    text-align: end;
+    margin-right: 20px;
+}
+
+.about_img .about_info h3{
+    margin-left: 20px;
+}
+
+.about_img .about_info h1{
+    font-size: 100px;
+   margin-left: 20px;
+}
+
+.about{
+    margin-top: 20px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    
+}
+.about.active{
+    animation: myAnim2 2s ease 0s 1 normal both;
+}
+
+@keyframes myAnim2 {
+	0% {
+		transform: scale(0.7);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+.about h5, .about h1{
+    color: #B19777;
+}
+.about h2{
+    margin: 30px 0 30px 0;
+    font-size: 40px;
+    color: #323232;
+}
+.about p{
+    color: #707070;
+}
+.about_num{
+    display: flex;
+    gap: 30px;
+    
+
+}
+.about_num h1{
+    font-size: 40px;
+}
+.about_num p{
+    font-weight: 500;
+    margin-top: 5px;
+    font-size:12px ;
+    color: #323232;
+}
+.about_num div{
+    border-left: 3px solid #b19777a1 ;
+    padding-left: 20px;
+}
+
+@media (max-width:900px) and (min-width:555px){
+    .about_container{
+        flex-direction: column;
+        padding: 10%;
+    }
+    .about_img img{
+        width: 550px;
+    }
+    .about_img .about_info{
+        width: 470px;
+    }
+}
+
+@media (max-width:555px) and (min-width:300px){
+    .about_container{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .about_img img, .about_img{
+        width: 300px;
+        height: 400px;
+    }
+    .about_img .about_info{
+        width: 230px;
+        height: 330px;
+    }
+
+    .about h2{
+        font-size: 30px;
+    }
+}
+
+@media (max-width:300px){
+    .about_container{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .about_img img, .about_img{
+        width: 250px;
+        height: 400px;
+    }
+    .about_img .about_info{
+        width: 180px;
+        height: 330px;
+    }
+
+    .about h2{
+        font-size: 25px;
+    }
+}

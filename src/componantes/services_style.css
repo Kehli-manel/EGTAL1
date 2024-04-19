@@ -1,0 +1,104 @@
+.s2{
+    display: flex;
+    flex-direction: column;
+    background-color: #F8F4F3;
+    padding: 100px;
+    gap: 20px;
+}
+
+.s2 img{
+    width: 500px;
+    height: 400px;
+    filter: brightness(40%);
+    position: relative;
+}
+.s2 h5{
+    color: #E6BF8B;
+    text-align: center;
+}
+.s2 .h1{
+    text-align: center;
+}
+.services{
+    display: flex;
+    margin: 50px auto;
+}
+.card{
+    display: flex;
+    border: #F8F4F3 solid 1px;
+}
+.card_info{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    color: #F8F4F3;
+    width: 400px;
+    margin: 60px;
+}
+
+.card_info h1{
+    color: #E6BF8B;
+    font-size: 40px;
+}
+
+.card_info p{
+    filter: brightness(80%);
+}
+
+.card button{
+    width: 180px;
+    padding: 15px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 150ms;
+}
+.card button:hover{
+    color: #F8F4F3;
+    background-color: #E6BF8B;
+    a{
+        color: #F8F4F3;
+    }
+    
+}
+.card button a{
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width:1024px) and (min-width:555px){
+    .services{
+        flex-direction: column;
+        margin: auto;
+    }
+}
+
+@media (max-width:555px) and (min-width:300px) {
+    .services{
+        flex-direction: column;
+        margin-left: -40px;
+    }
+    .s2 img{
+        width: 300px;
+    }
+    .card_info{
+        width: 200px;
+        margin: 30px;
+    }
+
+    
+}
+@media (max-width:300px){
+    .services{
+        flex-direction: column;
+        margin-left: -80px;
+    }
+    .s2 img{
+        width: 250px;
+    }
+    .card_info{
+        width: 200px;
+        margin: 30px;
+    }
+}

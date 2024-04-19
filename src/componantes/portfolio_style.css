@@ -1,0 +1,166 @@
+.s3 {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0px 0 0;
+    gap: 20px;
+}
+
+.s3 h5 {
+    color: #E6BF8B;
+    text-align: center;
+}
+
+.s3 .h1 {
+    text-align: center;
+}
+
+.habillage,
+.menuiserie {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 0 100px 0 100px;
+
+}
+
+.habillage {
+    background-color: #F8F4F3;
+    margin: 0;
+    padding-bottom: 100px;
+}
+
+.portfolio h2 {
+    border-top: rgba(212, 188, 155, 0.39) solid 1px;
+    padding-top: 30px;
+    color: #E6BF8B;
+}
+
+
+.portfolio_card {
+    margin-top: 30px;
+
+}
+.portfolio_card.active{
+    animation: myAnim3 1s ease 0s 1 normal forwards;
+}
+@keyframes myAnim3 {
+	0% {
+		transform: scaleY(0);
+		transform-origin: 100% 0%;
+	}
+
+	100% {
+		transform: scaleY(1);
+		transform-origin: 100% 0%;
+	}
+}
+
+.portfolio_card img {
+    width: 800px;
+    margin-bottom: 20px;
+    transition: 400ms;
+    
+
+}
+.portfolio_card img:hover{
+    transform: scale(1.1);
+    cursor: zoom-in;
+}
+
+.portfolio_card h3 {
+    font-weight: 400;
+    color: #7a7977;
+}
+.myimg{
+    margin: 0;
+    width: 100%;
+    overflow:hidden ;
+}
+.bgimg{
+    height: 300px;
+    width:100%;
+    filter: brightness(40%);
+    
+}
+.bgimg.active{
+    animation: myAnim5 5s ease 0s 1 normal forwards;
+}
+@keyframes myAnim5 {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1.2);
+	}
+}
+.myimg div{
+    position: relative;
+    top: -180px;
+    text-align: center;
+    color: #f8f4f3b4;
+}
+.myimg div button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: #F8F4F3 solid 1px;
+    font-size: 16px;
+    color: #F8F4F3;
+    border-radius: 50px;
+}
+.myimg div button:hover{
+    background-color: #F8F4F3;
+    color: black;
+    cursor: pointer;
+}
+@media (max-width:900px) and (min-width:450px) {
+    .portfolio_card img {
+        width: 400px;
+
+    }
+
+    .habillage,
+    .menuiserie {
+        padding: 10%;
+    }
+
+    .habillage {
+        text-align: start;
+        padding: 10%;
+    }
+}
+
+@media (max-width:450px) and (min-width:300px) {
+    .portfolio_card img {
+        width: 300px;
+
+    }
+
+    .habillage,
+    .menuiserie {
+        padding: 10%;
+    }
+
+    .habillage {
+        text-align: start;
+        padding: 10%;
+    }
+    
+}
+@media (max-width:300px){
+    .portfolio_card img {
+        width: 200px;
+
+    }
+
+    .habillage,
+    .menuiserie {
+        padding: 10%;
+    }
+
+    .habillage {
+        text-align: start;
+        padding: 10%;
+    }
+   
+}
